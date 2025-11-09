@@ -268,9 +268,10 @@
 
       .skills-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1.5rem;
         margin-top: 2rem;
+        width: 100%;
       }
 
       .skill-category {
@@ -278,27 +279,34 @@
         padding: 1.5rem;
         border-radius: 8px;
         box-shadow: var(--shadow);
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
       }
 
       .skill-category h4 {
         color: var(--primary-red);
         margin-bottom: 1rem;
         font-size: 1.1rem;
+        font-weight: 600;
       }
 
       .skill-list {
         list-style: none;
+        flex: 1;
       }
 
       .skill-list li {
-        padding: 0.3rem 0;
+        padding: 0.4rem 0;
         color: var(--gray-700);
+        line-height: 1.6;
       }
 
       .skill-list li::before {
         content: "▶";
         color: var(--primary-red);
         margin-right: 0.5rem;
+        font-size: 0.8rem;
       }
 
       /* Experience Section */
@@ -692,12 +700,11 @@
             <h1>Shantanu Kumar</h1>
             <p class="subtitle">Software Developer</p>
             <p>
-              Backend & Frontend (MERN Stack | .NET Core) Developer passionate
-              about building scalable web applications. I specialize in
-              full-stack development with expertise in modern technologies like
-              React, Node.js, and .NET Core. Always eager to learn new
-              technologies and solve complex problems through clean, efficient
-              code.
+              Passionate Full Stack Developer skilled in Node.js, .NET Core,
+              React.js, and Flutter, with hands-on experience building scalable
+              APIs, cloud-ready systems, and cross-platform applications.
+              Dedicated to clean code, problem-solving, and delivering
+              production-grade software solutions.
             </p>
             <div class="hero-buttons">
               <a href="#portfolio" class="btn btn-primary">
@@ -742,36 +749,65 @@
             </div>
             <div class="info-item">
               <span>LinkedIn:</span>
-              <span>shantanu7797</span>
+              <a
+                href="https://www.linkedin.com/in/shantanu7797/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >shantanu7797</a
+              >
             </div>
             <div class="info-item">
               <span>LeetCode:</span>
-              <span>shantanu7797</span>
+              <a
+                href="https://leetcode.com/u/shantanu7797/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >shantanu7797</a
+              >
+            </div>
+            <div class="info-item">
+              <span>Github:</span>
+              <a
+                href="https://github.com/shantanu7797"
+                target="_blank"
+                rel="noopener noreferrer"
+                >shantanu7797</a
+              >
             </div>
           </div>
           <div class="about-content">
             <h3>Professional Summary</h3>
             <p>
-              I'm a versatile software developer with expertise in both backend
-              and frontend development. My technical journey spans across modern
-              web technologies including the MERN stack and .NET Core framework.
+              I’m a Full Stack Developer with experience in building scalable
+              web and mobile applications using Node.js, .NET Core, React.js,
+              and Flutter. My focus lies in backend engineering, creating
+              RESTful APIs, integrating databases, and ensuring high-performance
+              systems through clean architecture.
             </p>
             <p>
-              I'm passionate about creating robust, scalable applications that
-              solve real-world problems. My approach to development focuses on
-              writing clean, maintainable code while staying updated with the
-              latest industry trends and best practices.
+              Currently, I work as a Software Associate at Culture Holidays,
+              contributing to backend development, API integration, and
+              Flutter-based mobile app projects that enhance product
+              performance. Previously, as an SDE Intern at the same
+              organization, I worked with Node.js, Express.js, and SQL Server,
+              optimizing backend services and improving scalability.
             </p>
+
             <div class="skills-grid">
+              <!-- Frontend Technologies -->
               <div class="skill-category">
                 <h4>Frontend Technologies</h4>
                 <ul class="skill-list">
                   <li>React.js</li>
                   <li>JavaScript (ES6+)</li>
-                  <li>HTML5 & CSS3</li>
                   <li>TypeScript</li>
+                  <li>HTML5 & CSS3</li>
+                  <li>Tailwind CSS</li>
+                  <li>Redux</li>
                 </ul>
               </div>
+
+              <!-- Backend Technologies -->
               <div class="skill-category">
                 <h4>Backend Technologies</h4>
                 <ul class="skill-list">
@@ -779,8 +815,12 @@
                   <li>Express.js</li>
                   <li>.NET Core</li>
                   <li>C#</li>
+                  <li>RESTful APIs</li>
+                  <li>Microservices Architecture</li>
                 </ul>
               </div>
+
+              <!-- Databases -->
               <div class="skill-category">
                 <h4>Databases</h4>
                 <ul class="skill-list">
@@ -790,12 +830,28 @@
                   <li>PostgreSQL</li>
                 </ul>
               </div>
+
+              <!-- Mobile Development -->
+              <div class="skill-category">
+                <h4>Mobile Development</h4>
+                <ul class="skill-list">
+                  <li>Flutter</li>
+                  <li>Dart</li>
+                  <li>Firebase</li>
+                  <li>Cross-Platform App Deployment</li>
+                </ul>
+              </div>
+
+              <!-- Tools & Others -->
               <div class="skill-category">
                 <h4>Tools & Others</h4>
                 <ul class="skill-list">
                   <li>Git & GitHub</li>
-                  <li>RESTful APIs</li>
+                  <li>Postman</li>
                   <li>Agile Development</li>
+                  <li>API Testing & Integration</li>
+                  <li>Cloud (AWS Basics)</li>
+                  <li>Data Structures & Algorithms (DSA)</li>
                   <li>Problem Solving</li>
                 </ul>
               </div>
@@ -810,34 +866,97 @@
       <div class="container">
         <h2 class="section-title">Experience & Education</h2>
         <div class="experience-timeline">
+          <!-- Software Associate -->
           <div class="experience-item">
-            <div class="experience-date">Present</div>
+            <div class="experience-date">Aug 2025 – Present</div>
+            <div class="experience-title">Software Associate</div>
+            <div class="experience-company">Culture Holidays</div>
+            <div class="experience-description">
+              Working as a Full Stack Developer focusing on backend and mobile
+              app development. Building and maintaining scalable systems using
+              <strong>Node.js</strong> and <strong>.NET Core</strong>, and
+              developing cross-platform mobile applications using
+              <strong>Flutter</strong>. Responsible for API integrations,
+              performance optimization, and improving product efficiency.
+            </div>
+          </div>
+
+          <!-- SDE Intern -->
+          <div class="experience-item">
+            <div class="experience-date">Jan 2025 – Jul 2025</div>
+            <div class="experience-title">
+              Software Development Engineer Intern
+            </div>
+            <div class="experience-company">Culture Holidays</div>
+            <div class="experience-description">
+              Contributed to backend development using <strong>Node.js</strong>,
+              <strong>Express.js</strong>, and <strong>SQL Server</strong>.
+              Implemented RESTful APIs and optimized database queries for better
+              scalability and performance. Collaborated with the team on
+              real-world projects following
+              <strong>Agile methodologies</strong>.
+            </div>
+          </div>
+
+          <!-- Freelance & Personal Projects -->
+          <div class="experience-item">
+            <div class="experience-date">2023 – 2024</div>
             <div class="experience-title">Full Stack Developer</div>
             <div class="experience-company">Freelance & Personal Projects</div>
             <div class="experience-description">
-              Developing end-to-end web applications using MERN stack and .NET
-              Core. Working on various projects to build scalable solutions and
-              enhance problem-solving skills through practical implementation.
+              Designed and developed end-to-end applications using
+              <strong>MERN stack</strong> and <strong>.NET Core</strong>. Built
+              projects like a <strong>Blood Bank Management System</strong> with
+              secure authentication, role-based access, and real-time data
+              handling. Focused on writing clean, maintainable, and efficient
+              code.
             </div>
           </div>
+
+          <!-- Competitive Programming -->
           <div class="experience-item">
             <div class="experience-date">Ongoing</div>
             <div class="experience-title">Competitive Programming</div>
-            <div class="experience-company">LeetCode Platform</div>
+            <div class="experience-company">LeetCode & GeeksforGeeks</div>
             <div class="experience-description">
-              Actively solving algorithmic problems on LeetCode to strengthen
-              data structures and algorithms knowledge. Focusing on optimizing
-              solutions and improving problem-solving approach.
+              Solved over <strong>500+ problems</strong> combined on LeetCode
+              and GeeksforGeeks. Strengthening understanding of
+              <strong>Data Structures & Algorithms</strong>
+              and enhancing logical and analytical problem-solving skills.
             </div>
           </div>
+
+          <!-- Education -->
+          <div class="experience-item">
+            <div class="experience-date">2021 – 2025</div>
+            <div class="experience-title">
+              Bachelor of Technology, Computer Science and Engineering
+            </div>
+            <div class="experience-company">
+              Netaji Subhas Institute of Technology, Bihta
+            </div>
+            <div class="experience-description">
+              Completed core courses in
+              <strong
+                >Software Engineering, Algorithms, Database Systems, and Web
+                Technologies</strong
+              >. CGPA: <strong>7.72</strong>. Participated and won in
+              hackathons, robotics competitions, and machine learning
+              internships.
+            </div>
+          </div>
+
+          <!-- Continuous Learning -->
           <div class="experience-item">
             <div class="experience-date">Continuous Learning</div>
             <div class="experience-title">Technology Enthusiast</div>
-            <div class="experience-company">Self-Learning</div>
+            <div class="experience-company">Self-Learning & Upskilling</div>
             <div class="experience-description">
-              Constantly learning new technologies and frameworks. Staying
-              updated with industry trends, best practices, and emerging
-              technologies in web development.
+              Constantly learning and exploring emerging technologies in web and
+              mobile development. Expanding expertise in
+              <strong>Flutter</strong>, <strong>AWS Cloud</strong>, and
+              <strong>System Design</strong>. Passionate about solving
+              real-world problems through scalable and impactful tech solutions.
             </div>
           </div>
         </div>
@@ -849,69 +968,105 @@
       <div class="container">
         <h2 class="section-title">My Services</h2>
         <div class="services-grid">
+          <!-- Frontend Development -->
           <div class="service-card">
             <div class="service-icon">
               <i class="fab fa-react"></i>
             </div>
             <h3 class="service-title">Frontend Development</h3>
             <p class="service-description">
-              Creating responsive and interactive user interfaces using
-              React.js, modern JavaScript, and CSS frameworks. Focus on user
-              experience and performance optimization.
+              Creating modern, responsive, and interactive web interfaces using
+              <strong>React.js</strong>, <strong>JavaScript (ES6+)</strong>, and
+              <strong>Tailwind CSS</strong>. Focused on optimizing performance
+              and enhancing user experience through clean and reusable
+              component-based design.
             </p>
           </div>
+
+          <!-- Backend Development -->
           <div class="service-card">
             <div class="service-icon">
               <i class="fas fa-server"></i>
             </div>
             <h3 class="service-title">Backend Development</h3>
             <p class="service-description">
-              Building robust server-side applications with Node.js and .NET
-              Core. Implementing RESTful APIs, authentication systems, and
-              database integration.
+              Building secure and scalable server-side applications using
+              <strong>Node.js</strong> and <strong>.NET Core</strong>.
+              Experienced in designing RESTful APIs, integrating databases, and
+              ensuring smooth communication between services in distributed
+              systems.
             </p>
           </div>
+
+          <!-- Cross-Platform App Development -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3 class="service-title">Cross-Platform App Development</h3>
+            <p class="service-description">
+              Developing and deploying mobile applications using
+              <strong>Flutter</strong> and <strong>Dart</strong>. Skilled in
+              creating performant apps for both Android and iOS with seamless
+              UI/UX and efficient API integration.
+            </p>
+          </div>
+
+          <!-- API & Microservices Development -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3 class="service-title">API & Microservices Development</h3>
+            <p class="service-description">
+              Designing and implementing <strong>RESTful APIs</strong> and
+              <strong>microservices</strong> architectures to support high
+              scalability and flexibility. Experienced with
+              <strong>Postman</strong>, <strong>JWT Authentication</strong>, and
+              modern integration techniques.
+            </p>
+          </div>
+
+          <!-- Database Design -->
           <div class="service-card">
             <div class="service-icon">
               <i class="fas fa-database"></i>
             </div>
             <h3 class="service-title">Database Design</h3>
             <p class="service-description">
-              Designing efficient database schemas and implementing data models
-              for both SQL and NoSQL databases including MongoDB, MySQL, and SQL
-              Server.
+              Designing optimized database schemas and queries using
+              <strong>MongoDB</strong>, <strong>SQL Server</strong>, and
+              <strong>PostgreSQL</strong>. Ensuring data integrity,
+              normalization, and efficient performance across different
+              environments.
             </p>
           </div>
+
+          <!-- Cloud & Deployment -->
           <div class="service-card">
             <div class="service-icon">
-              <i class="fas fa-mobile-alt"></i>
+              <i class="fas fa-cloud-upload-alt"></i>
             </div>
-            <h3 class="service-title">MERN Stack Development</h3>
+            <h3 class="service-title">Cloud & Deployment</h3>
             <p class="service-description">
-              Full-stack web application development using MongoDB, Express.js,
-              React.js, and Node.js with modern development practices and tools.
+              Basic experience with <strong>AWS</strong> and
+              <strong>CI/CD pipelines</strong>. Skilled in deploying full-stack
+              applications and maintaining reliable, production-ready
+              environments.
             </p>
           </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i class="fab fa-microsoft"></i>
-            </div>
-            <h3 class="service-title">.NET Development</h3>
-            <p class="service-description">
-              Developing enterprise-level applications using .NET Core
-              framework, C#, and related Microsoft technologies with focus on
-              scalability and performance.
-            </p>
-          </div>
+
+          <!-- Problem Solving -->
           <div class="service-card">
             <div class="service-icon">
               <i class="fas fa-code-branch"></i>
             </div>
             <h3 class="service-title">Problem Solving</h3>
             <p class="service-description">
-              Algorithmic problem solving and code optimization. Experience with
-              data structures, algorithms, and competitive programming platforms
-              like LeetCode.
+              Passionate about <strong>Data Structures & Algorithms</strong> and
+              <strong>competitive programming</strong>. Solved 500+ problems on
+              LeetCode and GeeksforGeeks, focusing on efficient, optimized code
+              solutions.
             </p>
           </div>
         </div>
@@ -974,62 +1129,6 @@
               <div class="portfolio-links">
                 <a href="#"><i class="fab fa-github"></i> GitHub</a>
                 <a href="#"><i class="fas fa-file-alt"></i> API Docs</a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-header">
-              <h3 class="portfolio-title">React Task Management App</h3>
-              <span class="portfolio-tech"
-                >React • Node.js • MongoDB • Socket.io</span
-              >
-            </div>
-            <div class="portfolio-content">
-              <p class="portfolio-description">
-                Real-time task management application with collaborative
-                features, drag-and-drop functionality, and live updates using
-                WebSocket technology.
-              </p>
-              <ul class="portfolio-features">
-                <li>Real-time collaborative editing</li>
-                <li>Drag-and-drop task organization</li>
-                <li>User roles and permissions</li>
-                <li>WebSocket integration</li>
-                <li>Responsive design</li>
-              </ul>
-              <div class="portfolio-links">
-                <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#"
-                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-header">
-              <h3 class="portfolio-title">Personal Portfolio Website</h3>
-              <span class="portfolio-tech"
-                >HTML5 • CSS3 • JavaScript • Responsive</span
-              >
-            </div>
-            <div class="portfolio-content">
-              <p class="portfolio-description">
-                Modern, responsive portfolio website showcasing projects and
-                skills with smooth animations, dark mode toggle, and optimized
-                performance.
-              </p>
-              <ul class="portfolio-features">
-                <li>Fully responsive design</li>
-                <li>Smooth scroll animations</li>
-                <li>Dark/Light mode toggle</li>
-                <li>Performance optimized</li>
-                <li>SEO friendly</li>
-              </ul>
-              <div class="portfolio-links">
-                <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://shantanukumar.in" target="_blank"
-                  ><i class="fas fa-external-link-alt"></i> Visit Site</a
-                >
               </div>
             </div>
           </div>
@@ -1280,11 +1379,13 @@
       // Typing animation for hero section
       const subtitle = document.querySelector(".subtitle");
       const titles = [
-        "Senior Backend Developer",
-        "API Architect",
-        "Cloud Solutions Expert",
-        "System Designer",
+        "Full Stack Developer",
+        "Backend Engineer (Node.js / .NET Core)",
+        "Software Development Engineer I",
+        "API & Microservices Developer",
+        "Cross-Platform App Developer (Flutter)",
       ];
+
       let titleIndex = 0;
       let charIndex = 0;
       let isDeleting = false;
